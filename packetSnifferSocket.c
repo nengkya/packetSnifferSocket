@@ -22,8 +22,6 @@ int main() {
 	if (0 == logFile) printf("Unable to create file !");
 
 	printf("Create a raw socket that shall sniff ...\n");
-<<<<<<< HEAD
-=======
 
 	/*
 	AF_INET designates the Address Format that goes with the local namespace
@@ -42,9 +40,21 @@ int main() {
 	*/
 	socketRaw = socket(AF_INET, SOCK_RAW, IPPROTO_TCP);
 
+	if (socketRaw < 0) {
+
+		printf("Socket error !\n");
+
+		return 1;
+
+	}
 
 
->>>>>>> d39b01e8940d3bcfa0a6024f94a65bb3bb01d9d3
+	while (1) printf("a");
+
+
+
+
+
 
 
 
