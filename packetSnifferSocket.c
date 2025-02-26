@@ -16,7 +16,7 @@ int main() {
 	*/
 	if (0 == logFile) printf("Unable to create file !");
 
-
+	printf("Create a raw socket that shall sniff ...\n");
 
 
 
